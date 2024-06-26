@@ -2,8 +2,8 @@ import streamlit as st
 import requests
 from datetime import datetime
 
-# News API 키 설정
-api_key = '4dc748f0b71f4770a674c4dec965d2b0'
+# Streamlit Secrets에서 API 키 가져오기
+api_key = st.secrets["newsapi"]["api_key"]
 query = 'AI Coding'
 url = f'https://newsapi.org/v2/everything?q={query}&apiKey={api_key}'
 
