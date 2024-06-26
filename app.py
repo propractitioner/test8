@@ -3,7 +3,7 @@ import requests
 from datetime import datetime
 
 # News API 키 설정
-api_key = 'YOUR_NEWS_API_KEY'
+api_key = '4dc748f0b71f4770a674c4dec965d2b0'
 query = 'AI Coding'
 url = f'https://newsapi.org/v2/everything?q={query}&apiKey={api_key}'
 
@@ -34,4 +34,3 @@ if news_data:
 
 if st.button('Refresh'):
     st.experimental_rerun()
-
